@@ -72,7 +72,7 @@ public class FingerPrintAuthPlugin extends Plugin {
                 } else if (!manager.hasEnrolledFingerprints()) {
                     call.reject("User hasn't enrolled any fingerprints to authenticate with");
                 } else {
-                    obj.put("has", false);
+                    obj.put("has", true);
                     obj.put("touch", true);
                     call.resolve(obj);
                 }
